@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/dischi', function () {
+    return view('dischi');
+});
+
+Route::get('/dischi','DischiController@index');
+
